@@ -13,3 +13,44 @@ enum RULES{
         ROLL="roll"
 }
 RULES.ADMIN; // by this we can acces this later in our applicationn devlopment
+
+//defined 
+let b : number; //if we define anything otherthan number for b it will show us error 
+
+//basuc types:
+//any
+let x;
+x=12;
+//x="Pratik";
+x.charAt(2); //why its working beacuse x containes a value which is string but if we remove that 
+//it will show error
+
+//unknown
+let y:unknown;
+y=12;
+y="Pratik";
+y.chartAt; //it throws a error , as we have to check y's type and then operate
+if(typeof y === "string"){
+        y.charAt(2);
+}
+if(typeof y === "number"){
+        y.toString();
+}
+
+//void : we have define void for those function which returns void 
+function abcd():void{
+        console.log("hello");
+}
+
+//null and undefined
+let abc : null ; //abc have to be null
+let def : undefined ; //abc have to be undefined
+
+//never : when we sure a function won't return anything it s infinite loop then we 
+function fun():never{
+        while(true){
+                
+        }
+}
+console.log("i am not running"); // its not gonna run as the function above is set to never type
+//which won't let the next code to run
