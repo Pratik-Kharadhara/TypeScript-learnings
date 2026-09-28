@@ -21,3 +21,16 @@ class Bottle2 {
 let b2 = new Bottle2("Blue", 1000, 300); //its give b1
 // Bottle {price: 100, color: 'blue', capacity: 1000}
 let b3 = new Bottle2("Green", 750, 250); //Bottle2 {color: 'Blue', capacity: 1000, price: 300}
+//suppose we want a value which is default 
+class Human {
+    name;
+    Nationality;
+    constructor(name = "Jhon Doe", Nationality) {
+        this.name = name;
+        this.Nationality = Nationality;
+        //the name if we don't push anything it will use default name Jhon Doe
+    }
+}
+let h1 = new Human(undefined, "Indian"); //it will give use default name Jhon Doe ,
+//Human {name: 'Jhon Doe', Nationality: 'Indian'}
+let h2 = new Human("Pratik", "German"); //Human {name: 'Pratik', Nationality: 'German'}
