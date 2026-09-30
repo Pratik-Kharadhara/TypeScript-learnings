@@ -33,3 +33,27 @@ let h1 = new Human(undefined,"Indian");//it will give use default name Jhon Doe 
 //Human {name: 'Jhon Doe', Nationality: 'Indian'}
 
 let h2 = new Human("Pratik","German");//Human {name: 'Pratik', Nationality: 'German'}
+
+
+//this keyword
+//this keyword is used for accessing the varibale or any attribute inside a method
+//  of that class
+
+class example{
+    public name:string ="Pratik";
+    public age:number =21;
+    //to acces this attributes we need to use this 
+    random(){
+        console.log(this.name);
+        console.log(this.age);
+    }
+}
+
+let c1 = new example(); // when we run the c1 object instance
+/**  example {name: 'Pratik', age: 21}
+age
+: 
+21
+ name
+ : 
+"Pratik"*/
