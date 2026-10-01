@@ -57,3 +57,6 @@ age
  name
  : 
 "Pratik"*/
+//Public Private 
+//public classes or methods can be used by the all he classes and methods
+//private can only be accessable by the parent class or methods
