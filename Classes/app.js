@@ -53,4 +53,35 @@ age
 21
  name
  :
-"Pratik"*/ 
+"Pratik"*/
+//Public Private 
+//public classes or methods can be used by the all he classes and methods
+//private can only be accessable by the parent class or methods
+class bottleMaker {
+    brand;
+    constructor(brand) {
+        this.brand = brand;
+    }
+    outPut() {
+        console.log(this.brand);
+    }
+}
+const bottle1 = new bottleMaker("Milton");
+bottle1.outPut(); //Milton as its defined as public
+class bottleMaker2 {
+    brand;
+    constructor(brand) {
+        this.brand = brand;
+    }
+    output() {
+        console.log(this.brand);
+    }
+}
+const bottle2 = new bottleMaker2("chilton");
+/*bottleMaker2 {brand: 'chilton'}
+brand
+:
+"chilton"
+*/
+bottle2.output(); // although it will run but the error shows here as output is privat
+console.log(bottle2.brand); //similiarly can't acces brand which is private  although it runs
