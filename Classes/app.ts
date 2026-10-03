@@ -113,3 +113,15 @@ ex.changeName();/*ƒ changeName() {
         console.log(this.name);
     }*/
 
+//Read Only
+//it makes a varibale unchangeble 
+class User{
+    constructor(public readonly name:string){}
+
+    changeName(){
+        this.name="changed";//the name can't ba changbale as it a readonly
+    }
+}
+
+let user = new User("Pratik");
+user.changeName();//although it will chhange but still it will send the error
