@@ -85,3 +85,24 @@ brand
 */
 bottle2.output(); // although it will run but the error shows here as output is privat
 console.log(bottle2.brand); //similiarly can't acces brand which is private  although it runs
+//Protected- access modifier
+//it helps to access the variable in that class and the class which extends it 
+class Example1 {
+    name = "Chilton";
+}
+class Example2 extends Example1 {
+    material;
+    constructor(material) {
+        super();
+        this.material = material;
+    }
+    changeName() {
+        this.name = "New Name"; //chilton->new name
+        console.log(this.name);
+    }
+}
+let ex = new Example2("Steel");
+ex.changeName(); /*ƒ changeName() {
+        this.name = "New Name"; //chilton->new name
+        console.log(this.name);
+    }*/
