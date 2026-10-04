@@ -119,3 +119,25 @@ class User {
 }
 let user = new User("Pratik");
 user.changeName(); //although it will chhange but still it will send the error
+//getter and setter
+//get is a method to get any value
+//set is used to set any value
+class GetterSetter {
+    _a;
+    _b;
+    constructor(_a, _b) {
+        this._a = _a;
+        this._b = _b;
+    }
+    //_a and _b is done beacuse other wise it will be same as the getter and setter method names
+    get a() {
+        return this._a;
+    }
+    set b(newValue) {
+        this._b = newValue;
+    }
+}
+let ab = new GetterSetter(21, "Pratik");
+ab.a; //21
+ab.b = "Debanjan"; /*ab.b = "Debanjana"
+'Debanjana' */
