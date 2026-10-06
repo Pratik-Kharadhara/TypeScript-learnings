@@ -152,3 +152,32 @@ class User2 {
 }
 User2.name; // 'Pratik'
 User2.getName(); //'Pratik'
+//Abstract Classes : for a abstract class you can't instantiate or create a object.
+//as Abstract classes is not ment to be instantiated then it has to be exntended and implemnt
+class User3 {
+    name;
+    age;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+class Pratik extends User3 {
+    name;
+    age;
+    UserName;
+    constructor(name, age, UserName) {
+        super(name, age);
+        this.name = name;
+        this.age = age;
+        this.UserName = UserName;
+    }
+    //have to implement the abstract method
+    getUserName() {
+        console.log(this.UserName);
+    }
+}
+let pratik = new Pratik("Pratik", 21, "Pratik-Kharadhara");
+pratik.UserName; //'Pratik-Kharadhara'
+pratik; /*
+Pratik {name: 'Pratik', age: 21, UserName: 'Pratik-Kharadhara'} */
