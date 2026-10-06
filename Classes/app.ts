@@ -146,3 +146,15 @@ let ab = new GetterSetter(21,"Pratik");
 ab.a; //21
 ab.b = "Debanjan"; /*ab.b = "Debanjana"
 'Debanjana' */
+
+//Static keyword
+//if we use static keyword before any varibale or method 
+//then we don't need to create a object instance we can directly access them 
+class User2{
+    static name:string =  "Pratik";
+    static getName(){
+        return this.name;
+    }
+}
+User2.name // 'Pratik'
+User2.getName()//'Pratik'
