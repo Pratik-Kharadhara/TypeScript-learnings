@@ -190,3 +190,4 @@ let pratik = new Pratik("Pratik",21,"Pratik-Kharadhara");
 pratik.UserName //'Pratik-Kharadhara'
 pratik/*
 Pratik {name: 'Pratik', age: 21, UserName: 'Pratik-Kharadhara'} */
+

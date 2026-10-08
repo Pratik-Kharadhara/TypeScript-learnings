@@ -1,6 +1,50 @@
 "use strict";
+//var a = 10;
+//console.log(a);
 Object.defineProperty(exports, "__esModule", { value: true });
-var a = 10;
-// const show = (a)=>{
-console.log(a);
+let a = [10, 23, 144, "Pratik", "John"]; //its a illegal declaration TS as it contains both the NUM and String
+//tuples
+//its a fixed length array where each elemnt can have a specific distinct data type and position
+let arr = ["Pratik", 7];
+//enums
+var RULES;
+(function (RULES) {
+    RULES["ADMIN"] = "admin";
+    RULES["ROLL"] = "roll";
+})(RULES || (RULES = {}));
+RULES.ADMIN; // by this we can acces this later in our applicationn devlopment
+//defined 
+let b; //if we define anything otherthan number for b it will show us error 
+//basuc types:
+//any
+let x;
+x = 12;
+//x="Pratik";
+x.charAt(2); //why its working beacuse x containes a value which is string but if we remove that 
+//it will show error
+//unknown
+let y;
+y = 12;
+y = "Pratik";
+y.chartAt; //it throws a error , as we have to check y's type and then operate
+if (typeof y === "string") {
+    y.charAt(2);
+}
+if (typeof y === "number") {
+    y.toString();
+}
+//void : we have define void for those function which returns void 
+function abcd() {
+    console.log("hello");
+}
+//null and undefined
+let abc; //abc have to be null
+let def; //abc have to be undefined
+//never : when we sure a function won't return anything it s infinite loop then we 
+function fun() {
+    while (true) {
+    }
+}
+console.log("i am not running"); // its not gonna run as the function above is set to never type
+//which won't let the next code to run
 //# sourceMappingURL=app.js.map

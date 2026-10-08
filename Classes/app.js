@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 //classes help us to create object instance
 class Bottle {
     price = 100;
@@ -181,3 +182,4 @@ let pratik = new Pratik("Pratik", 21, "Pratik-Kharadhara");
 pratik.UserName; //'Pratik-Kharadhara'
 pratik; /*
 Pratik {name: 'Pratik', age: 21, UserName: 'Pratik-Kharadhara'} */
+//# sourceMappingURL=app.js.map
